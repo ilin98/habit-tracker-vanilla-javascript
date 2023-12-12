@@ -68,8 +68,8 @@ h1 {
 
 .habit-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fre));
-    padding: var(--sm) var (--med);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: var(--sm) var(--med);
     max-width: 400px;
     grid-gap: 1rem;
 }
