@@ -48,3 +48,73 @@ body {
     position: relative;
     cursor: pointer;
 }
+
+.theme::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary);
+    position: absolute;
+    z-index: 3;
+    top: 2px;
+    left: 3px;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+
+h1 {
+    font-size: var(--med);
+}
+
+.habit-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fre));
+    padding: var(--sm) var (--med);
+    max-width: 400px;
+    grid-gap: 1rem;
+}
+
+.habit {
+    display: grid;
+    place-items: center;
+}
+
+.habit-btn {
+    width: var(--large);
+    height: var(--large);
+    border-radius: 50%;
+    background-color: var(--primary);
+    border: 6px solid var(--secondary);
+    color: var(var(--secondary));
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.habit-btn:hover {
+    opacity: .8;
+}
+
+.habit-btn.completed {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.habit-btn svg {
+    pointer-events: none;
+    width: var(--med);
+    height: var(--med);
+}
+
+.new-habit-add {
+    width: var(--med);
+    height: var(--med);
+    border-radius: 50%;
+    background-color: var(--secondary);
+    color: var(--primary);
+    display: grid;
+    place-items: center;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
